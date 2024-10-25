@@ -1,0 +1,73 @@
+
+<div class="div_uaslp">
+    <a href="/inicio"><img src="imagenes/autonoma.png" title="UASLP"/></a>
+</div>
+<div class="div_general">
+    <div class="div_formulario">
+        <form (ngSubmit)="onSubmit()" #datos="ngForm">
+            <div *ngIf="errorMessage" class="error-message">
+                {{ errorMessage }}
+            </div>
+            <div class="div_password">
+                <input type="email" id="email" name="email" placeholder="Email" required [(ngModel)]="email" />
+            </div>
+            <div class="div_password">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required [(ngModel)]="password" />
+            </div>
+            <div class="div_iniciar">
+                <button class="iniciar_sesion" type="submit">Iniciar sesión</button>
+            </div>
+        </form>
+        <div class="olvidar_password">
+            <a routerLink="/olvidar-contraseña">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="div_iniciar">
+            <div class="crear_cuenta">
+                <a routerLink="/registro">Crea una cuenta</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pie_pagina">
+    <div class="imagen_abajo">
+        <img src="imagenes/autonoma.png" title="UASLP"/>
+        <div class="logotipos"><a href="https://www.facebook.com/LaUASLP/"><img src="imagenes/fb_original-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://www.instagram.com/lauaslp/"><img src="imagenes/instragram_blanco-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://mx.linkedin.com/school/somosuaslp/"><img src="imagenes/in-removebg-preview.png"></a></div>
+    </div>
+    <div class="pie_pagina1">
+        <div class="menu">
+            <h4>MENU</h4>
+            <hr>
+            <div class="menu-items">
+                <div class="columna">
+                    <a href="#">INICIO</a>
+                    <a href="#">ACERCA DE</a>
+                    <a href="#">HORARIOS</a>
+                </div>
+                <div class="columna">
+                    <a href="#">TAREAS</a>
+                    <a href="#">NOTAS</a>
+                    <a href="#">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+        <div class="opciones_extras">
+            <div class="texto_explicacion">
+                <p>Descarga Nuestra Aplicación</p>
+                <p>ingresa a estos sitios para más información</p>
+            </div>
+            <div class="botones_AP">
+                <a href="">
+                    <img src="imagenes/app_store-removebg-preview.png">
+                </a>
+                <a href="#">
+                    <img src="imagenes/play_store-removebg-preview.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="linea_completa">Todos los derechos reservados</div>
+</footer>
+

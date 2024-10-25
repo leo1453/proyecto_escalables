@@ -1,0 +1,71 @@
+
+<div class="container">
+    <header>
+        <a href="/inicio"> <img src="imagenes/uaslp_logo.png" alt="UASLP Logo" class="logo"></a> 
+    </header>
+    <main>
+        <div class="form-container">
+            <div class="form-content">
+                <div class="profile-pic">
+                    <img src="imagenes/icon.png" alt="Profile Placeholder">
+                </div>
+                <form>
+                    <div class="flex_error">
+                        <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+                        <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
+                    </div>
+
+                    <input type="text" name="nombre_usuario" placeholder="Usuario" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+            <div class="tiene_cuenta">
+                <p>¿Ya tienes una cuenta? <a routerLink="/login">Inicia sesión</a></p> 
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="pie_pagina">
+    <div class="imagen_abajo">
+        <img src="imagenes/autonoma.png" title="UASLP"/>
+        <div class="logotipos"><a href="https://www.facebook.com/LaUASLP/"><img src="imagenes/fb_original-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://www.instagram.com/lauaslp/"><img src="imagenes/instragram_blanco-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://mx.linkedin.com/school/somosuaslp/"><img src="imagenes/in-removebg-preview.png"></a></div>
+    </div>
+    <div class="pie_pagina1">
+        <div class="menu">
+            <h4>MENU</h4>
+            <hr>
+            <div class="menu-items">
+                <div class="columna">
+                    <a routerLink="/">INICIO</a>
+                    <a href="#">ACERCA DE</a>
+                    <a href="#">HORARIOS</a>
+                </div>
+                <div class="columna">
+                    <a href="#">TAREAS</a>
+                    <a href="#">NOTAS</a>
+                    <a href="#">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+        <div class="opciones_extras">
+            <div class="texto_explicacion">
+                <p>Descarga Nuestra Aplicación</p>
+                <p>ingresa a estos sitios para más información</p>
+            </div>
+            <div class="botones_AP">
+                <a href="#">
+                    <img src="imagenes/app_store-removebg-preview.png">
+                </a>
+                <a href="#">
+                    <img src="imagenes/play_store-removebg-preview.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="linea_completa">Todos los derechos reservados</div>
+</footer>

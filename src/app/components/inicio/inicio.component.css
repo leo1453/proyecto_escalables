@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #001140;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(0, 0, 0) 3%, #181851 38%, rgba(3, 28, 255, 0.516) 68%, rgb(17, 0, 255) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+header {
+    background-color: #001140;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register {
+    background-color: #0047FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #0036CC;
+}
+
+.btn-register a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.btn-register a:hover {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.hero {
+    padding: 50px;
+    background-color: #001140;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
+}
+
+.hero-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00BFFF;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hero ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.download-btn {
+    align-self: center;
+    margin-top: 20px;
+    background-color: #0047FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #0036CC;
+}
+
+.hero-image {
+    max-width: 30%;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #001140;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.feature {
+    background-color: #141432;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.feature h2,
+.feature p {
+    color: white;
+}
+
+.simple-web {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #001140;
+}
+
+.simple-web-content {
+    flex: 1;
+}
+
+.simple-web-content h1 {
+    color: #ffffff !important;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.simple-web-content .highlight {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+}
+
+.simple-web-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.simple-web-content ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.simple-web-content ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.simple-web-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.pie_pagina {
+    padding: 20px 80px;
+    background-color: #181851;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.imagen_abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen_abajo img {
+    margin-right: auto;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.logotipos img {
+    margin-bottom: auto;
+    padding: 0 5px;
+    width: 40px;
+    height: 30px;
+}
+
+.logotipos a:hover {
+    box-shadow: 1px 1px 10px white;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.pie_pagina1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.opciones_extras {
+    display: block;
+    justify-items: end;
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 4px 3px 8px black;
+    background-color: #141432;
+}
+
+.opciones_extras:hover {
+    box-shadow: 7px 5px 8px black;
+}
+
+.menu {
+    justify-content: start;
+    width: 200px;
+    text-align: center;
+}
+
+.menu h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0 20px;
+}
+
+.linea_completa {
+    margin-top: 40px;
+    border-top: 1px solid white;
+    width: 1030px;
+    padding-top: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+}
+
+.columna a:hover {
+    color: rgb(3, 28, 255);
+    text-shadow: 1px 1px 10px white;
+}
+
+/* Botones extras */
+.botones_AP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botones_AP a img {
+    width: 50px;
+    height: 40px;
+}
+
+.botones_AP a img:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.texto_explicacion {
+
+    color: #ffffff !important; 
+}

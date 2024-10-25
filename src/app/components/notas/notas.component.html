@@ -1,0 +1,113 @@
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="container">
+    <header>
+        <nav class="navbar">
+            <img src="imagenes/autonoma.png" alt="UASLP Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="/inicio">Inicio</a></li>
+                <li><a href="#">Chat en línea</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Asignaciones</a></li>
+                <li><a href="#">Notas</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <span>Bienvenido: Usuario</span>
+                <button class="btn-logout"><a href="#">Cerrar Sesión</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="notes-filter-section">
+            <div class="search-bar">
+                <form method="GET" action="#">
+                    <button type="submit" name="filter" value="all" id="show-all">Ver notas</button>
+                </form>
+            </div>
+        </section>
+        <section class="notes-section">
+            <h2>Tus Notas</h2>
+            <div class="notes-list" id="notesList">
+                <div class="note-item text">
+                    <h3>Título de la Nota</h3>
+                    <p>Creada el: 10-10-2023 10:00:00</p>
+                    <p>Actualizada el: 11-10-2023 10:00:00</p>
+                    <div class="note-actions">
+                        <a href="#" class="btn-open">Abrir</a>
+                        <a href="#" class="btn-edit">Editar</a>
+                        <a href="#" class="btn-send">Enviar</a>
+                        <button class="btn-delete">Eliminar</button>
+                        <a href="#" class="btn-download">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="register-section">
+            <h2>Registrar Nueva Nota</h2>
+            <form class="note-form" id="noteForm" enctype="multipart/form-data">
+                <input type="text" placeholder="Título de la nota" name="noteTitle" required>
+                <textarea placeholder="Contenido de la nota" name="noteContent" required></textarea>
+                <input type="file" multiple name="noteFiles[]">
+                <div class="form-group">
+                    <label for="course">Curso:</label>
+                    <input type="text" name="course" placeholder="Nombre del curso">
+                </div>
+                <button type="submit">Registrar Nota</button>
+            </form>
+        </section>
+        <section class="audio-register-section">
+            <h2>Registrar Nueva Nota de Audio</h2>
+            <form class="note-form" id="audioNoteForm" enctype="multipart/form-data">
+                <input type="text" placeholder="Título de la nota de audio" name="audioNoteTitle" required>
+                <div class="form-group">
+                    <label for="audioCourse">Curso:</label>
+                    <input type="text" name="audioCourse" placeholder="Nombre del curso">
+                </div>
+                <div class="form-group">
+                    <label for="audioFile">Archivo de Audio:</label>
+                    <input type="file" accept="audio/*" required>
+                </div>
+                <button type="submit">Registrar Nota</button>
+            </form>
+        </section>
+    </main>
+</div>
+<footer class="pie_pagina">
+    <div class="imagen_abajo">
+        <img src="imagenes/autonoma.png" title="UASLP"/>
+        <div class="logotipos"><a href="https://www.facebook.com/LaUASLP/"><img src="imagenes/fb_original-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://www.instagram.com/lauaslp/"><img src="imagenes/instragram_blanco-removebg-preview.png"></a></div>
+        <div class="logotipos"><a href="https://mx.linkedin.com/school/somosuaslp/"><img src="imagenes/in-removebg-preview.png"></a></div>
+    </div>
+    <div class="pie_pagina1">
+        <div class="menu">
+            <h4>MENU</h4>
+            <hr>
+            <div class="menu-items">
+                <div class="columna">
+                    <a href="#">INICIO</a>
+                    <a href="#">CHAT EN LINEA</a>
+                    <a href="#">HORARIOS</a>
+                    <a href="#">ASIGNACIONES</a>
+                    <a href="#">NOTAS</a>
+                </div>
+            </div>
+        </div>
+        <div class="opciones_extras">
+            <div class="texto_explicacion">
+                <p>Descarga Nuestra Aplicación</p>
+                <p>ingresa a estos sitios para más información</p>
+            </div>
+            <div class="botones_AP">
+                <a href="#">
+                    <img src="imagenes/app_store-removebg-preview.png">
+                </a>
+                <a href="#">
+                    <img src="imagenes/play_store-removebg-preview.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="linea_completa">Todos los derechos reservados</div>
+</footer>

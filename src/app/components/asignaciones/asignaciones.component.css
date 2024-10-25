@@ -1,0 +1,521 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #250ef5;
+    margin: 0;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(0, 0, 0) 3%, #181851 38%, rgba(3,28,255,0.516) 68%, rgb(17, 0, 255) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+header {
+    background-color: #001140;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons span {
+    padding-top: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.auth-buttons button {
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+    background-color: #0047ff;
+}
+
+.auth-buttons button a {
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons button:hover {
+    background-color: #000fb6;
+}
+
+.btn-login, .btn-register {
+    background-color: #0047FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #0036CC;
+}
+
+/* Asignaciones */
+.agrupar2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.agrupar2 input:hover, textarea:hover, select:hover {
+    box-shadow: 3px 3px 10px black;
+}
+
+.varios_elementos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.varios_elementos input {
+    border-radius: 15px 0 15px 15px;
+    text-align: center;
+}
+
+.agrupar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-bar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra_btn_busqueda {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.app {
+    width: 1100px;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px;
+    margin-bottom: 100px;
+    background-color: #001140;
+}
+
+.app:hover {
+    box-shadow: 2px 3px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px white;
+    color: white;
+}
+
+.app .agrupar2 h1 {
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 25px Varela Round, sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: move linear 2000ms infinite;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: solid;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border-radius: 15px 0 15px 15px;
+}
+
+.acomodar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.acomodar button {
+    width: 200px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 2px 10px black;
+}
+
+#tasksList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.task {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.task:hover {
+    background-color: #250ef5;
+}
+
+.task.completed {
+    text-decoration: dotted;
+    color: rgb(62, 255, 3);
+}
+
+.task-actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.task-actions button {
+    width: 100px;
+    margin: 5px;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.popup-content img {
+    width: 80px;
+    height: 85px;
+}
+
+.popup-content button {
+    padding: 0;
+    margin: 0;
+}
+
+.popup-content .btn_completado {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_completado #progressButton:hover {
+    background-color: green;
+}
+
+.btn_completado #deleteButton:hover {
+    background-color: red;
+}
+
+/* Footer */
+.pie_pagina {
+    padding: 20px 80px;
+    background-color: #181851;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.imagen_abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen_abajo img {
+    margin-right: auto;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    width: 120px;
+    height: 60px;
+}
+
+.logotipos img {
+    margin-bottom: auto;
+    padding: 0 5px;
+    width: 40px;
+    height: 30px;
+}
+
+.logotipos a:hover {
+    box-shadow: 1px 1px 10px white;
+    border-radius: 15px;
+}
+
+.pie_pagina1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.opciones_extras {
+    display: block;
+    justify-items: end;
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 4px 3px 8px;
+    background-color: #141432;
+}
+
+.opciones_extras:hover {
+    box-shadow: 7px 5px 8px;
+}
+
+.menu {
+    justify-content: start;
+    width: 200px;
+    text-align: center;
+}
+
+.menu h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0 20px;
+}
+
+.linea_completa {
+    margin-top: 40px;
+    border-top: 1px solid white;
+    width: 1030px;
+    padding-top: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.columna a:hover {
+    color: rgb(3, 28, 255);
+    text-shadow: 1px 1px 10px white;
+}
+
+.texto_explicacion {
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    color: white;
+}
+
+.botones_AP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botones_AP a img {
+    width: 50px;
+    height: 40px;
+}
+
+.botones_AP a img:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+/* Wave Animation */
+.wave {
+    background: rgb(0, 21, 255);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/* Title Animation */
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+@keyframes move {
+    0% {
+        text-shadow:
+            4px -4px 0 black, 
+            3px -3px 0 black, 
+            2px -2px 0 black, 
+            1px -1px 0 black,
+            -4px 4px 0 white, 
+            -3px 3px 0 white, 
+            -2px 2px 0 white, 
+            -1px 1px 0 white;
+    }
+    25% {
+        text-shadow:
+            -4px -4px 0 white, 
+            -3px -3px 0 white, 
+            -2px -2px 0 white, 
+            -1px -1px 0 white,
+            4px 4px 0 black, 
+            3px 3px 0 black, 
+            2px 2px 0 black, 
+            1px 1px 0 black;
+    }
+    50% {
+        text-shadow:
+            -4px 4px 0 black, 
+            -3px 3px 0 black, 
+            -2px 2px 0 black, 
+            -1px 1px 0 black,
+            4px -4px 0 white, 
+            3px -3px 0 white, 
+            2px -2px 0 white, 
+            1px -1px 0 white;
+    }
+    75% {
+        text-shadow:
+            4px 4px 0 white, 
+            3px 3px 0 white, 
+            2px 2px 0 white, 
+            1px 1px 0 white,
+            -4px -4px 0 black, 
+            -3px -3px 0 black, 
+            -2px -2px 0 black, 
+            -1px -1px 0 black;
+    }
+    100% {
+        text-shadow:
+            4px -4px 0 black, 
+            3px -3px 0 black, 
+            2px -2px 0 black, 
+            1px -1px 0 black,
+            -4px 4px 0 white, 
+            -3px 3px 0 white, 
+            -2px 2px 0 white, 
+            -1px 1px 0 white;
+    }
+}
