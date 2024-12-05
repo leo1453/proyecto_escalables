@@ -1,0 +1,186 @@
+.pie_pagina {
+    padding: 20px 80px;
+    background-color: #181851;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.imagen_abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Mantén la disposición horizontal en pantallas grandes */
+}
+
+.imagen_abajo img {
+    margin-right: auto;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen_abajo .logo-uaslp {
+    max-width: 150px;
+    height: auto;
+}
+
+.logotipos img {
+    margin-bottom: auto;
+    padding: 0 5px;
+    width: 40px;
+    height: 30px;
+}
+
+.logotipos a:hover {
+    box-shadow: 1px 1px 10px white;
+    border-radius: 15px;
+}
+
+.pie_pagina1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Mantén la disposición horizontal en pantallas grandes */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.opciones_extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 4px 3px 8px black;
+    background-color: #141432;
+    text-align: center;
+}
+
+.opciones_extras:hover {
+    box-shadow: 7px 5px 8px black;
+}
+
+.menu {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.menu h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0 20px;
+}
+
+.linea_completa {
+    margin-top: 40px;
+    border-top: 1px solid white;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Mantén la disposición horizontal en pantallas grandes */
+    gap: 10px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.columna a:hover {
+    color: rgb(3, 28, 255);
+    text-shadow: 1px 1px 10px white;
+}
+
+/* Botones extras */
+.botones_AP {
+    display: flex;
+    flex-wrap: nowrap; /* Mantén la disposición horizontal en pantallas grandes */
+    justify-content: center;
+    gap: 10px;
+}
+
+.botones_AP a img {
+    width: 50px;
+    height: 40px;
+}
+
+.botones_AP a img:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.texto_explicacion {
+    color: #ffffff !important;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .pie_pagina1 {
+        flex-direction: column; /* Cambia la disposición a vertical en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        gap: 20px;
+    }
+
+    .menu-items {
+        flex-direction: column; /* Cambia las columnas a filas */
+        align-items: center;
+    }
+
+    .opciones_extras {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen_abajo {
+        flex-direction: column; /* Cambia la disposición a vertical */
+        align-items: center;
+    }
+
+    .logo-uaslp {
+        max-width: 120px; /* Reduce el tamaño del logo */
+    }
+
+    .menu h4 {
+        font-size: 14px; /* Reduce el tamaño de los encabezados */
+    }
+
+    .columna a {
+        font-size: 12px; /* Reduce el tamaño de los enlaces */
+    }
+
+    .botones_AP a img {
+        width: 40px; /* Reduce el tamaño de los botones */
+        height: 30px;
+    }
+
+    .linea_completa {
+        font-size: 8px; /* Ajusta el texto para pantallas muy pequeñas */
+    }
+}

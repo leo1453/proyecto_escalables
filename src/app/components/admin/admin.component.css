@@ -1,0 +1,105 @@
+/* Contenedor principal */
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(0, 21, 255, 0.8); /* Fondo azul oscuro */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1A1A4B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(0, 128, 255, 0.9); /* Fondo azul claro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Encabezado de la tabla */
+  thead tr {
+    background-color: rgba(0, 64, 128, 0.9); /* Fondo azul más oscuro */
+    color: white;
+    text-align: left;
+  }
+  
+  thead th {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff; /* Línea blanca debajo del encabezado */
+  }
+  
+  /* Filas de la tabla */
+  tbody tr {
+    transition: background-color 0.3s ease;
+    color: white; /* Texto blanco para las filas */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgba(0, 128, 255, 0.8); /* Azul claro */
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: rgba(0, 128, 255, 0.7); /* Azul claro pero un poco más oscuro */
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(0, 64, 128, 1); /* Azul oscuro para hover */
+  }
+  
+  /* Celdas de la tabla */
+  td, th {
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Botones de acciones */
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-edit {
+    background-color: #28a745; /* Verde para editar */
+    color: white;
+  }
+  
+  button.btn-edit:hover {
+    background-color: #218838;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545; /* Rojo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+  }
+  
+  

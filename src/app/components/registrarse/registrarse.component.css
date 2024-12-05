@@ -1,28 +1,39 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #001140;
     color: #fff;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+.div_uaslp {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    background-color: #001140;
+    padding-top: 30px; /* Ajusta según lo que necesites */
+    padding-bottom: 20px; /* Agrega espacio en la parte inferior */
+}
+
+.logo-uaslp {
+    max-width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 20px; /* Espacio en la parte inferior de la imagen */
 }
 
 .container {
-    min-height: 100vh; 
-    position: relative; 
-    z-index: 1;
-}
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #001140;
-}
-
-header .logo {
-    max-width: 500px;
-}
-
-h1, h2 {
-    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; /* Separación desde el header */
+    margin-bottom: 30px; /* Separación hacia el footer */
 }
 
 main {
@@ -30,8 +41,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-    background-color: #181851;
+    background-color: transparent; /* Quita el fondo */
 }
 
 .form-container {
@@ -40,6 +50,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 600px;
+    background-color: #001140; /* Fondo del formulario */
 }
 
 .form-container:hover {
@@ -91,229 +102,6 @@ form button:hover {
     background-color: #007bffb6;
 }
 
-form p {
-    margin: 20px 0 0;
-}
-
-form p a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #141432;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.footer-left {
-    flex: 1;
-    text-align: left;
-}
-
-.footer-left .logo-footer {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
-
-.footer-right {
-    flex: 1;
-    text-align: left;
-    max-width: 300px;
-    margin-top: 60px;
-}
-
-.app-download {
-    background-color: #0b163f;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.app-download p {
-    margin: 0 0 10px;
-}
-
-.store-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.store-buttons a {
-    display: inline-block;
-}
-
-.store-buttons a img {
-    max-width: 120px;
-}
-
-.footer-bottom {
-    background-color: #181851;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.social-media {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-bottom: 1px;
-}
-
-.social-media a img {
-    max-width: 30px;
-}
-
-.rights {
-    margin: 0;
-    text-align: left;
-}
-
-.botones_AP {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.botones_AP a img {
-    width: 50px;
-    height: 40px;
-}
-
-.botones_AP a img:hover {
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px white;
-}
-
-.pie_pagina {
-    padding: 20px 80px;
-    background-color: #181851;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.imagen_abajo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.imagen_abajo img {
-    margin-right: auto;
-    padding: 20px 0;
-    padding-bottom: 30px;
-    width: 120px;
-    height: 60px;
-}
-
-.logotipos img {
-    margin-bottom: auto;
-    padding: 0 5px;
-    width: 40px;
-    height: 30px;
-}
-
-.logotipos a:hover {
-    box-shadow: 1px 1px 10px white;
-    border-radius: 15px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-}
-
-.pie_pagina1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 120px;
-}
-
-.opciones_extras {
-    display: block;
-    justify-items: end;
-    padding: 10px;
-    border-radius: 15px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 4px 3px 8px black;
-    background-color: #141432;
-}
-
-.opciones_extras:hover {
-    box-shadow: 7px 5px 8px black;
-}
-
-.menu {
-    justify-content: start;
-    width: 200px;
-    text-align: center;
-}
-
-.menu h4 {
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ffffff;
-    margin: 10px 0 20px;
-}
-
-.linea_completa {
-    margin-top: 40px;
-    border-top: 1px solid white;
-    width: 1030px;
-    padding-top: 20px;
-    color: white;
-    font-size: 10px;
-    text-align: start;
-}
-
-.menu-items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.columna {
-    display: flex;
-    flex-direction: column;
-}
-
-.columna a {
-    text-decoration: none;
-    color: white;
-    margin: 5px 0;
-    font-size: 14px;
-    display: flex;
-    justify-content: start;
-}
-
-.columna a:hover {
-    text-decoration: underline;
-    text-shadow: 1px 1px 10px white;
-}
-
-.texto_explicacion {
-    height: 100px;
-    width: 200px;
-    margin: auto;
-    color: white;
-}
-
-/*cuando ya tiene cuenta*/
 .tiene_cuenta a {
     text-decoration: none;
     color: aqua;
@@ -324,39 +112,4 @@ hr {
     color: aqua;
     text-decoration: underline;
     text-shadow: 3px 3px 10px;
-}
-
-/*fondo*/
-body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgb(0, 0, 0) 3%, #181851 38%, rgba(3, 28, 255, 0.516) 68%, rgb(17, 0, 255) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.tiene_cuenta p {
-    color: white; 
-}
-
-.tiene_cuenta a {
-    color: aqua; 
-}
-
-.tiene_cuenta a:hover {
-    text-decoration: underline;
 }

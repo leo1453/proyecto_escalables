@@ -1,0 +1,126 @@
+header {
+    background-color: #001140;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ajusta los enlaces cuando el espacio sea limitado */
+    margin: 10px 0; /* Espaciado vertical en pantallas pequeñas */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los botones en pantallas pequeñas */
+}
+
+.btn-login, .btn-register {
+    background-color: #0047FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0; /* Evita que los botones se reduzcan en pantallas pequeñas */
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #0036CC;
+}
+
+.btn-register a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.btn-register a:hover {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.username {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    background-color: #0047FF;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces */
+        gap: 10px; /* Reduce el espacio entre enlaces */
+    }
+
+    .auth-buttons {
+        flex-direction: column; /* Apila los botones verticalmente */
+        align-items: center; /* Centra los botones */
+    }
+
+    .btn-login, .btn-register {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el texto */
+    }
+}
+
+/* Estilos para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .logo {
+        height: 40px; /* Reduce el tamaño del logo */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Reduce el tamaño de los enlaces */
+    }
+
+    .btn-login, .btn-register {
+        font-size: 14px; /* Reduce el tamaño del texto de los botones */
+        padding: 8px 15px; /* Ajusta el padding */
+    }
+
+    .username {
+        font-size: 14px; /* Reduce el tamaño del texto de usuario */
+        padding: 5px 10px; /* Ajusta el padding */
+    }
+}
